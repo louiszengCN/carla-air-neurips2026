@@ -59,3 +59,39 @@ down.
 | P | Toggle physics / noclip |
 | H | Show / hide help overlay |
 | Tab | Release / capture mouse |
+
+## Visual
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="../docs/gifs/W1.gif" alt="W1: Air-ground cooperation" width="100%"/><br/>
+      <b>W1 — Air-Ground Cooperation</b><br/>
+      <sub>Heterogeneous air-ground agents in a shared urban world.</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="../docs/gifs/W2.gif" alt="W2: VLN / VLA tasks" width="100%"/><br/>
+      <b>W2 — VLN / VLA Tasks</b><br/>
+      <sub>Vision-and-language-driven navigation and action.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="../docs/gifs/W3.gif" alt="W3: Multi-modal dataset collection" width="100%"/><br/>
+      <b>W3 — Multi-Modal Dataset Collection</b><br/>
+      <sub>Synchronised aerial-ground sensor streams on a single tick.</sub>
+    </td>
+    <td align="center">
+      <img src="../docs/gifs/W4.gif" alt="W4: Cross-view perception" width="100%"/><br/>
+      <b>W4 — Cross-View Perception</b><br/>
+      <sub>Paired air-ground views across weather and lighting.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="../docs/gifs/ROS_demo.gif" alt="ROS 2 integration" width="100%"/><br/>
+      <b>ROS 2 Integration</b><br/>
+      <sub>Native ROS 2 topics across both backends from one runtime.</sub>
+    </td>
+  </tr>
+</table>
