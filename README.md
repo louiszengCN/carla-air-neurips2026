@@ -1,5 +1,9 @@
 # Anonymous Code Supplement
 
+<p align="center">
+  <img src="docs/images/teaser_video.gif" alt="CarlaAir teaser" width="100%"/>
+</p>
+
 This repository contains the code accompanying our NeurIPS 2026 submission on
 closed-loop air-ground cooperative VLA evaluation. It has two parts:
 

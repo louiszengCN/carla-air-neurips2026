@@ -61,11 +61,24 @@ python scripts/smoke_test.py        # ~3 s landing scenario
 python scripts/smoke_test_escort.py # ~3 s escort scenario
 ```
 
-To run the unit tests (no simulator needed):
+## Unit tests
+
+A 27-test conformance suite under `tests/` runs in a few seconds with
+no simulator required:
 
 ```bash
 pytest tests/
 ```
+
+What it covers:
+
+| Group | Count | What it asserts |
+|---|---|---|
+| Prompt templates  | 10 | Cue strings produced by `api/cue.py` match the canonical examples in Table 6 / Table C.5 of the paper character-for-character. |
+| Oracle phase decoder | 6 | Every branch and boundary of Eq. (2) in the paper (`d > 8 → approach`, `2 < d ≤ 8 ∧ cos θ ≥ 0.7 → descend`, otherwise `hover`). |
+| Landing metrics   | 5 | Boundary cases of TSR (`K = 3 s`), LSR (drift `≤ 0.3 m` within `2 s`, no collision), and CCR / CG aggregation. |
+| Escort metrics    | 3 | RSR aggregation across multiple occlusion events; RAT cap at `15 s`. |
+| Statistics        | 3 | Hierarchical bootstrap CI degenerate cases; sign-test edge cases. |
 
 ## Plugging in a UAV policy
 
