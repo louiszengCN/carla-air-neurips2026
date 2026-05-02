@@ -1,0 +1,11 @@
+# Escort prompt-format ablation — reproduces paper Table 3 (escort rows).
+task: escort
+modes:
+  - C0
+  - C1-Sem
+  - C1-Num
+  - C1-Noisy
+  - C1-Oracle-Bearing
+seeds: [0, 1, 2]
+episodes_per_seed: 50
+control_hz: 10.0

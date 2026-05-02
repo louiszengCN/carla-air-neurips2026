@@ -1,0 +1,3367 @@
+{
+  "type": "vehicle",
+  "map": "Town10HD",
+  "delta_time": 0.05,
+  "total_frames": 146,
+  "vehicle_id": "vehicle.tesla.model3",
+  "frames": [
+    {
+      "frame": 0,
+      "transform": {
+        "x": 61.2646,
+        "y": 131.5464,
+        "z": 0.0017,
+        "pitch": 0.0321,
+        "yaw": 178.4411,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -5.8715,
+        "y": 0.1598,
+        "z": -0.0003
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 1,
+      "transform": {
+        "x": 60.9652,
+        "y": 131.5545,
+        "z": 0.0017,
+        "pitch": 0.0346,
+        "yaw": 178.4411,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -6.064,
+        "y": 0.165,
+        "z": -0.0002
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 2,
+      "transform": {
+        "x": 60.6574,
+        "y": 131.5629,
+        "z": 0.0016,
+        "pitch": 0.0368,
+        "yaw": 178.441,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -6.2188,
+        "y": 0.1692,
+        "z": -0.0001
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 3,
+      "transform": {
+        "x": 60.3404,
+        "y": 131.5715,
+        "z": 0.0016,
+        "pitch": 0.0391,
+        "yaw": 178.441,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -6.4201,
+        "y": 0.1747,
+        "z": -0.0001
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 4,
+      "transform": {
+        "x": 60.0146,
+        "y": 131.5804,
+        "z": 0.0016,
+        "pitch": 0.0407,
+        "yaw": 178.441,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -6.5812,
+        "y": 0.1791,
+        "z": -0.0001
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 5,
+      "transform": {
+        "x": 59.6794,
+        "y": 131.5895,
+        "z": 0.0016,
+        "pitch": 0.0423,
+        "yaw": 178.4409,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -6.7852,
+        "y": 0.1847,
+        "z": -0.0001
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 6,
+      "transform": {
+        "x": 59.3352,
+        "y": 131.5989,
+        "z": 0.0016,
+        "pitch": 0.0433,
+        "yaw": 178.4409,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -6.9484,
+        "y": 0.1891,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 7,
+      "transform": {
+        "x": 58.9817,
+        "y": 131.6085,
+        "z": 0.0016,
+        "pitch": 0.0443,
+        "yaw": 178.4409,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -7.152,
+        "y": 0.1947,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 8,
+      "transform": {
+        "x": 58.6192,
+        "y": 131.6184,
+        "z": 0.0016,
+        "pitch": 0.0448,
+        "yaw": 178.4409,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -7.3151,
+        "y": 0.1991,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 9,
+      "transform": {
+        "x": 58.2474,
+        "y": 131.6285,
+        "z": 0.0016,
+        "pitch": 0.0454,
+        "yaw": 178.4409,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -7.5168,
+        "y": 0.2046,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 10,
+      "transform": {
+        "x": 57.8667,
+        "y": 131.6388,
+        "z": 0.0016,
+        "pitch": 0.0455,
+        "yaw": 178.4409,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -7.679,
+        "y": 0.209,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 11,
+      "transform": {
+        "x": 57.4767,
+        "y": 131.6495,
+        "z": 0.0016,
+        "pitch": 0.0458,
+        "yaw": 178.4408,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -7.8782,
+        "y": 0.2144,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 12,
+      "transform": {
+        "x": 57.078,
+        "y": 131.6603,
+        "z": 0.0016,
+        "pitch": 0.0458,
+        "yaw": 178.4408,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -8.0389,
+        "y": 0.2188,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 13,
+      "transform": {
+        "x": 56.6702,
+        "y": 131.6714,
+        "z": 0.0016,
+        "pitch": 0.0458,
+        "yaw": 178.4408,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -8.2351,
+        "y": 0.2242,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 14,
+      "transform": {
+        "x": 56.2536,
+        "y": 131.6828,
+        "z": 0.0016,
+        "pitch": 0.0456,
+        "yaw": 178.4408,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -8.3943,
+        "y": 0.2285,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 15,
+      "transform": {
+        "x": 55.8281,
+        "y": 131.6943,
+        "z": 0.0016,
+        "pitch": 0.0456,
+        "yaw": 178.4408,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -8.5874,
+        "y": 0.2337,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 16,
+      "transform": {
+        "x": 55.394,
+        "y": 131.7062,
+        "z": 0.0016,
+        "pitch": 0.0453,
+        "yaw": 178.4408,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -8.7448,
+        "y": 0.238,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 17,
+      "transform": {
+        "x": 54.9511,
+        "y": 131.7182,
+        "z": 0.0016,
+        "pitch": 0.0453,
+        "yaw": 178.4408,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -8.9348,
+        "y": 0.2432,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 18,
+      "transform": {
+        "x": 54.4997,
+        "y": 131.7305,
+        "z": 0.0016,
+        "pitch": 0.0448,
+        "yaw": 178.4407,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -9.0905,
+        "y": 0.2475,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 19,
+      "transform": {
+        "x": 54.0395,
+        "y": 131.743,
+        "z": 0.0016,
+        "pitch": 0.0447,
+        "yaw": 178.4406,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -9.2771,
+        "y": 0.2525,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 20,
+      "transform": {
+        "x": 53.5714,
+        "y": 131.7558,
+        "z": 0.0016,
+        "pitch": 0.0439,
+        "yaw": 178.4406,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -9.4143,
+        "y": 0.2563,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 21,
+      "transform": {
+        "x": 53.0979,
+        "y": 131.7687,
+        "z": 0.0016,
+        "pitch": 0.0401,
+        "yaw": 178.4406,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -9.4926,
+        "y": 0.2584,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 22,
+      "transform": {
+        "x": 52.6239,
+        "y": 131.7816,
+        "z": 0.0017,
+        "pitch": 0.0321,
+        "yaw": 178.4406,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -9.4672,
+        "y": 0.2577,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 23,
+      "transform": {
+        "x": 52.1509,
+        "y": 131.7944,
+        "z": 0.0017,
+        "pitch": 0.0237,
+        "yaw": 178.4406,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -9.4588,
+        "y": 0.2575,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 24,
+      "transform": {
+        "x": 51.6783,
+        "y": 131.8073,
+        "z": 0.0017,
+        "pitch": 0.0176,
+        "yaw": 178.4406,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -9.4561,
+        "y": 0.2574,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 25,
+      "transform": {
+        "x": 51.2036,
+        "y": 131.8202,
+        "z": 0.0018,
+        "pitch": 0.0153,
+        "yaw": 178.4406,
+        "roll": -0.0001
+      },
+      "velocity": {
+        "x": -9.5246,
+        "y": 0.2593,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 26,
+      "transform": {
+        "x": 50.7257,
+        "y": 131.8269,
+        "z": 0.0018,
+        "pitch": 0.0149,
+        "yaw": 178.7729,
+        "roll": -0.0376
+      },
+      "velocity": {
+        "x": -9.5821,
+        "y": -0.0414,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.28,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 27,
+      "transform": {
+        "x": 50.2444,
+        "y": 131.8193,
+        "z": 0.0018,
+        "pitch": 0.0156,
+        "yaw": 179.7363,
+        "roll": -0.092
+      },
+      "velocity": {
+        "x": -9.6648,
+        "y": -0.3882,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.168,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 28,
+      "transform": {
+        "x": 49.7579,
+        "y": 131.8031,
+        "z": 0.0017,
+        "pitch": 0.0181,
+        "yaw": -179.1763,
+        "roll": -0.1035
+      },
+      "velocity": {
+        "x": -9.7718,
+        "y": -0.4937,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.1008,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 29,
+      "transform": {
+        "x": 49.2646,
+        "y": 131.7827,
+        "z": 0.0017,
+        "pitch": 0.0216,
+        "yaw": -178.291,
+        "roll": -0.0916
+      },
+      "velocity": {
+        "x": -9.9226,
+        "y": -0.5381,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0605,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 30,
+      "transform": {
+        "x": 48.7647,
+        "y": 131.7594,
+        "z": 0.0017,
+        "pitch": 0.0244,
+        "yaw": -177.6517,
+        "roll": -0.0752
+      },
+      "velocity": {
+        "x": -10.0366,
+        "y": -0.5544,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": 0.0363,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 31,
+      "transform": {
+        "x": 48.2607,
+        "y": 131.734,
+        "z": 0.0017,
+        "pitch": 0.0239,
+        "yaw": -177.2164,
+        "roll": -0.0607
+      },
+      "velocity": {
+        "x": -10.0932,
+        "y": -0.5708,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": 0.0218,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 32,
+      "transform": {
+        "x": 47.7573,
+        "y": 131.7071,
+        "z": 0.0017,
+        "pitch": 0.0184,
+        "yaw": -176.9298,
+        "roll": -0.049
+      },
+      "velocity": {
+        "x": -10.0411,
+        "y": -0.578,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": 0.0131,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 33,
+      "transform": {
+        "x": 47.2572,
+        "y": 131.6792,
+        "z": 0.0018,
+        "pitch": 0.0107,
+        "yaw": -176.7462,
+        "roll": -0.0398
+      },
+      "velocity": {
+        "x": -9.9726,
+        "y": -0.585,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0078,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 34,
+      "transform": {
+        "x": 46.7613,
+        "y": 131.6506,
+        "z": 0.0018,
+        "pitch": 0.0034,
+        "yaw": -176.6311,
+        "roll": -0.0324
+      },
+      "velocity": {
+        "x": -9.8852,
+        "y": -0.5888,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0047,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 35,
+      "transform": {
+        "x": 46.2676,
+        "y": 131.6214,
+        "z": 0.0018,
+        "pitch": -0.0003,
+        "yaw": -176.5598,
+        "roll": -0.0264
+      },
+      "velocity": {
+        "x": -9.874,
+        "y": -0.5957,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0028,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 36,
+      "transform": {
+        "x": 45.7737,
+        "y": 131.5918,
+        "z": 0.0018,
+        "pitch": -0.0005,
+        "yaw": -176.516,
+        "roll": -0.0215
+      },
+      "velocity": {
+        "x": -9.8868,
+        "y": -0.6019,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0017,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 37,
+      "transform": {
+        "x": 45.2771,
+        "y": 131.5616,
+        "z": 0.0018,
+        "pitch": 0.0023,
+        "yaw": -176.4893,
+        "roll": -0.0174
+      },
+      "velocity": {
+        "x": -9.9652,
+        "y": -0.6108,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 38,
+      "transform": {
+        "x": 44.7765,
+        "y": 131.531,
+        "z": 0.0018,
+        "pitch": 0.0064,
+        "yaw": -176.4731,
+        "roll": -0.014
+      },
+      "velocity": {
+        "x": -10.0449,
+        "y": -0.6185,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0006,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 39,
+      "transform": {
+        "x": 44.2705,
+        "y": 131.4998,
+        "z": 0.0018,
+        "pitch": 0.0112,
+        "yaw": -176.4634,
+        "roll": -0.0112
+      },
+      "velocity": {
+        "x": -10.1718,
+        "y": -0.6282,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0004,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 40,
+      "transform": {
+        "x": 43.7585,
+        "y": 131.4682,
+        "z": 0.0018,
+        "pitch": 0.0159,
+        "yaw": -176.4575,
+        "roll": -0.0089
+      },
+      "velocity": {
+        "x": -10.2868,
+        "y": -0.6365,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0002,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 41,
+      "transform": {
+        "x": 43.2396,
+        "y": 131.4361,
+        "z": 0.0017,
+        "pitch": 0.0204,
+        "yaw": -176.4539,
+        "roll": -0.007
+      },
+      "velocity": {
+        "x": -10.4375,
+        "y": -0.6467,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 42,
+      "transform": {
+        "x": 42.714,
+        "y": 131.4104,
+        "z": 0.0017,
+        "pitch": 0.0235,
+        "yaw": -176.8081,
+        "roll": 0.0348
+      },
+      "velocity": {
+        "x": -10.5666,
+        "y": -0.329,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.2799,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 43,
+      "transform": {
+        "x": 42.1817,
+        "y": 131.3997,
+        "z": 0.0017,
+        "pitch": 0.0257,
+        "yaw": -177.8354,
+        "roll": 0.0949
+      },
+      "velocity": {
+        "x": -10.7065,
+        "y": 0.0407,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.168,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 44,
+      "transform": {
+        "x": 41.642,
+        "y": 131.3989,
+        "z": 0.0017,
+        "pitch": 0.0286,
+        "yaw": -179.0095,
+        "roll": 0.1112
+      },
+      "velocity": {
+        "x": -10.8571,
+        "y": 0.1731,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.1008,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 45,
+      "transform": {
+        "x": 41.0942,
+        "y": 131.4032,
+        "z": 0.0017,
+        "pitch": 0.0312,
+        "yaw": -179.974,
+        "roll": 0.1017
+      },
+      "velocity": {
+        "x": -11.0212,
+        "y": 0.23,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0605,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 46,
+      "transform": {
+        "x": 40.5389,
+        "y": 131.4111,
+        "z": 0.0017,
+        "pitch": 0.033,
+        "yaw": 179.324,
+        "roll": 0.0864
+      },
+      "velocity": {
+        "x": -11.1614,
+        "y": 0.2619,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0363,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 47,
+      "transform": {
+        "x": 39.9759,
+        "y": 131.4221,
+        "z": 0.0016,
+        "pitch": 0.0344,
+        "yaw": 178.8442,
+        "roll": 0.0726
+      },
+      "velocity": {
+        "x": -11.3222,
+        "y": 0.2949,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0218,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 48,
+      "transform": {
+        "x": 39.4055,
+        "y": 131.4357,
+        "z": 0.0016,
+        "pitch": 0.0354,
+        "yaw": 178.5284,
+        "roll": 0.061
+      },
+      "velocity": {
+        "x": -11.4642,
+        "y": 0.3224,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0131,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 49,
+      "transform": {
+        "x": 38.8275,
+        "y": 131.4513,
+        "z": 0.0016,
+        "pitch": 0.0363,
+        "yaw": 178.3259,
+        "roll": 0.0513
+      },
+      "velocity": {
+        "x": -11.6229,
+        "y": 0.3489,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0078,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 50,
+      "transform": {
+        "x": 38.2421,
+        "y": 131.4685,
+        "z": 0.0016,
+        "pitch": 0.0367,
+        "yaw": 178.1978,
+        "roll": 0.0429
+      },
+      "velocity": {
+        "x": -11.7629,
+        "y": 0.3699,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0047,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 51,
+      "transform": {
+        "x": 37.6493,
+        "y": 131.487,
+        "z": 0.0016,
+        "pitch": 0.0371,
+        "yaw": 178.1176,
+        "roll": 0.0357
+      },
+      "velocity": {
+        "x": -11.9171,
+        "y": 0.3883,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0028,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 52,
+      "transform": {
+        "x": 37.0498,
+        "y": 131.4993,
+        "z": 0.0016,
+        "pitch": 0.0363,
+        "yaw": 178.4457,
+        "roll": -0.0132
+      },
+      "velocity": {
+        "x": -12.034,
+        "y": 0.0553,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.2783,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 53,
+      "transform": {
+        "x": 36.4469,
+        "y": 131.4921,
+        "z": 0.0017,
+        "pitch": 0.0326,
+        "yaw": 179.7005,
+        "roll": -0.1038
+      },
+      "velocity": {
+        "x": -12.0666,
+        "y": -0.5255,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.447,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 54,
+      "transform": {
+        "x": 35.8422,
+        "y": 131.4609,
+        "z": 0.0017,
+        "pitch": 0.029,
+        "yaw": -178.2482,
+        "roll": -0.1838
+      },
+      "velocity": {
+        "x": -12.1082,
+        "y": -1.068,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.2682,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 55,
+      "transform": {
+        "x": 35.2328,
+        "y": 131.4109,
+        "z": 0.0017,
+        "pitch": 0.029,
+        "yaw": -176.0605,
+        "roll": -0.2106
+      },
+      "velocity": {
+        "x": -12.2231,
+        "y": -1.3678,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.1609,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 56,
+      "transform": {
+        "x": 34.6166,
+        "y": 131.3487,
+        "z": 0.0017,
+        "pitch": 0.0306,
+        "yaw": -174.2709,
+        "roll": -0.1985
+      },
+      "velocity": {
+        "x": -12.3579,
+        "y": -1.5295,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0965,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 57,
+      "transform": {
+        "x": 33.9938,
+        "y": 131.2766,
+        "z": 0.0017,
+        "pitch": 0.032,
+        "yaw": -172.9606,
+        "roll": -0.1774
+      },
+      "velocity": {
+        "x": -12.4894,
+        "y": -1.6599,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0579,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 58,
+      "transform": {
+        "x": 33.3648,
+        "y": 131.1957,
+        "z": 0.0017,
+        "pitch": 0.0329,
+        "yaw": -172.056,
+        "roll": -0.157
+      },
+      "velocity": {
+        "x": -12.6156,
+        "y": -1.7786,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0348,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 59,
+      "transform": {
+        "x": 32.7297,
+        "y": 131.1073,
+        "z": 0.0016,
+        "pitch": 0.0335,
+        "yaw": -171.4544,
+        "roll": -0.1383
+      },
+      "velocity": {
+        "x": -12.7399,
+        "y": -1.8851,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0209,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 60,
+      "transform": {
+        "x": 32.0887,
+        "y": 131.0128,
+        "z": 0.0016,
+        "pitch": 0.0338,
+        "yaw": -171.0635,
+        "roll": -0.121
+      },
+      "velocity": {
+        "x": -12.8628,
+        "y": -1.9768,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0125,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 61,
+      "transform": {
+        "x": 31.4416,
+        "y": 130.9132,
+        "z": 0.0016,
+        "pitch": 0.034,
+        "yaw": -170.8143,
+        "roll": -0.1047
+      },
+      "velocity": {
+        "x": -12.9861,
+        "y": -2.0537,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0075,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 62,
+      "transform": {
+        "x": 30.7881,
+        "y": 130.817,
+        "z": 0.0016,
+        "pitch": 0.033,
+        "yaw": -171.041,
+        "roll": -0.0459
+      },
+      "velocity": {
+        "x": -13.1271,
+        "y": -1.7619,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.2755,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 63,
+      "transform": {
+        "x": 30.1285,
+        "y": 130.7347,
+        "z": 0.0017,
+        "pitch": 0.0311,
+        "yaw": -172.0577,
+        "roll": 0.0329
+      },
+      "velocity": {
+        "x": -13.2613,
+        "y": -1.3961,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.1653,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 64,
+      "transform": {
+        "x": 29.462,
+        "y": 130.6626,
+        "z": 0.0017,
+        "pitch": 0.0309,
+        "yaw": -173.3232,
+        "roll": 0.0698
+      },
+      "velocity": {
+        "x": -13.4062,
+        "y": -1.2305,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0992,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 65,
+      "transform": {
+        "x": 28.7882,
+        "y": 130.5969,
+        "z": 0.0017,
+        "pitch": 0.0314,
+        "yaw": -174.4283,
+        "roll": 0.0781
+      },
+      "velocity": {
+        "x": -13.5464,
+        "y": -1.144,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0595,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 66,
+      "transform": {
+        "x": 28.1073,
+        "y": 130.5366,
+        "z": 0.0017,
+        "pitch": 0.0319,
+        "yaw": -175.2705,
+        "roll": 0.0772
+      },
+      "velocity": {
+        "x": -13.6823,
+        "y": -1.0748,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0357,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 67,
+      "transform": {
+        "x": 27.4194,
+        "y": 130.4811,
+        "z": 0.0017,
+        "pitch": 0.0322,
+        "yaw": -175.8687,
+        "roll": 0.0742
+      },
+      "velocity": {
+        "x": -13.8151,
+        "y": -1.0108,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0214,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 68,
+      "transform": {
+        "x": 26.7249,
+        "y": 130.4298,
+        "z": 0.0017,
+        "pitch": 0.0323,
+        "yaw": -176.276,
+        "roll": 0.0702
+      },
+      "velocity": {
+        "x": -13.9453,
+        "y": -0.9531,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0129,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 69,
+      "transform": {
+        "x": 26.0239,
+        "y": 130.382,
+        "z": 0.0017,
+        "pitch": 0.0323,
+        "yaw": -176.5457,
+        "roll": 0.0654
+      },
+      "velocity": {
+        "x": -14.0732,
+        "y": -0.9043,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0077,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 70,
+      "transform": {
+        "x": 25.3166,
+        "y": 130.3369,
+        "z": 0.0017,
+        "pitch": 0.0322,
+        "yaw": -176.7211,
+        "roll": 0.0596
+      },
+      "velocity": {
+        "x": -14.1991,
+        "y": -0.8656,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0046,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 71,
+      "transform": {
+        "x": 24.6029,
+        "y": 130.2938,
+        "z": 0.0017,
+        "pitch": 0.0321,
+        "yaw": -176.8335,
+        "roll": 0.0532
+      },
+      "velocity": {
+        "x": -14.323,
+        "y": -0.8367,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0028,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 72,
+      "transform": {
+        "x": 23.8831,
+        "y": 130.2521,
+        "z": 0.0017,
+        "pitch": 0.0319,
+        "yaw": -176.9049,
+        "roll": 0.0465
+      },
+      "velocity": {
+        "x": -14.4453,
+        "y": -0.8163,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0017,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 73,
+      "transform": {
+        "x": 23.1573,
+        "y": 130.2114,
+        "z": 0.0017,
+        "pitch": 0.0317,
+        "yaw": -176.95,
+        "roll": 0.0399
+      },
+      "velocity": {
+        "x": -14.566,
+        "y": -0.8029,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 74,
+      "transform": {
+        "x": 22.4254,
+        "y": 130.1713,
+        "z": 0.0017,
+        "pitch": 0.0314,
+        "yaw": -176.9783,
+        "roll": 0.0336
+      },
+      "velocity": {
+        "x": -14.6854,
+        "y": -0.795,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0006,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 75,
+      "transform": {
+        "x": 21.6879,
+        "y": 130.137,
+        "z": 0.0017,
+        "pitch": 0.0305,
+        "yaw": -177.2819,
+        "roll": 0.061
+      },
+      "velocity": {
+        "x": -14.7921,
+        "y": -0.5189,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.2804,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 76,
+      "transform": {
+        "x": 20.9462,
+        "y": 130.1185,
+        "z": 0.0017,
+        "pitch": 0.0282,
+        "yaw": -178.2879,
+        "roll": 0.1203
+      },
+      "velocity": {
+        "x": -14.8692,
+        "y": -0.088,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.1682,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 77,
+      "transform": {
+        "x": 20.1996,
+        "y": 130.1137,
+        "z": 0.0017,
+        "pitch": 0.0275,
+        "yaw": -179.5993,
+        "roll": 0.1473
+      },
+      "velocity": {
+        "x": -14.9782,
+        "y": 0.1514,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.1009,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 78,
+      "transform": {
+        "x": 19.4472,
+        "y": 130.1185,
+        "z": 0.0017,
+        "pitch": 0.0277,
+        "yaw": 179.2082,
+        "roll": 0.1474
+      },
+      "velocity": {
+        "x": -15.0931,
+        "y": 0.3033,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0606,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 79,
+      "transform": {
+        "x": 18.689,
+        "y": 130.1317,
+        "z": 0.0017,
+        "pitch": 0.0281,
+        "yaw": 178.2672,
+        "roll": 0.1391
+      },
+      "velocity": {
+        "x": -15.2061,
+        "y": 0.4311,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0363,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 80,
+      "transform": {
+        "x": 17.9252,
+        "y": 130.1525,
+        "z": 0.0017,
+        "pitch": 0.0285,
+        "yaw": 177.578,
+        "roll": 0.1295
+      },
+      "velocity": {
+        "x": -15.3167,
+        "y": 0.5494,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0218,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 81,
+      "transform": {
+        "x": 17.156,
+        "y": 130.1803,
+        "z": 0.0017,
+        "pitch": 0.0287,
+        "yaw": 177.0956,
+        "roll": 0.1198
+      },
+      "velocity": {
+        "x": -15.4256,
+        "y": 0.6576,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0131,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 82,
+      "transform": {
+        "x": 16.3814,
+        "y": 130.214,
+        "z": 0.0017,
+        "pitch": 0.0288,
+        "yaw": 176.7684,
+        "roll": 0.1097
+      },
+      "velocity": {
+        "x": -15.5334,
+        "y": 0.7523,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0078,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 83,
+      "transform": {
+        "x": 15.6014,
+        "y": 130.2527,
+        "z": 0.0017,
+        "pitch": 0.0288,
+        "yaw": 176.5513,
+        "roll": 0.099
+      },
+      "velocity": {
+        "x": -15.6406,
+        "y": 0.8319,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0047,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 84,
+      "transform": {
+        "x": 14.8161,
+        "y": 130.2954,
+        "z": 0.0017,
+        "pitch": 0.0288,
+        "yaw": 176.4096,
+        "roll": 0.0879
+      },
+      "velocity": {
+        "x": -15.7474,
+        "y": 0.8967,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0028,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 85,
+      "transform": {
+        "x": 14.0255,
+        "y": 130.3412,
+        "z": 0.0017,
+        "pitch": 0.0287,
+        "yaw": 176.3183,
+        "roll": 0.0768
+      },
+      "velocity": {
+        "x": -15.8538,
+        "y": 0.9481,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0017,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 86,
+      "transform": {
+        "x": 13.2296,
+        "y": 130.3894,
+        "z": 0.0017,
+        "pitch": 0.0286,
+        "yaw": 176.2599,
+        "roll": 0.0659
+      },
+      "velocity": {
+        "x": -15.9599,
+        "y": 0.9885,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 87,
+      "transform": {
+        "x": 12.4284,
+        "y": 130.4395,
+        "z": 0.0017,
+        "pitch": 0.0284,
+        "yaw": 176.2227,
+        "roll": 0.0558
+      },
+      "velocity": {
+        "x": -16.0655,
+        "y": 1.0201,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0006,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 88,
+      "transform": {
+        "x": 11.6224,
+        "y": 130.4833,
+        "z": 0.0017,
+        "pitch": 0.0271,
+        "yaw": 176.6027,
+        "roll": 0.0012
+      },
+      "velocity": {
+        "x": -16.1514,
+        "y": 0.6742,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.2796,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 89,
+      "transform": {
+        "x": 10.813,
+        "y": 130.5107,
+        "z": 0.0017,
+        "pitch": 0.025,
+        "yaw": 177.7569,
+        "roll": -0.0744
+      },
+      "velocity": {
+        "x": -16.2239,
+        "y": 0.2574,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.1678,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 90,
+      "transform": {
+        "x": 9.999,
+        "y": 130.5245,
+        "z": 0.0017,
+        "pitch": 0.0246,
+        "yaw": 179.1882,
+        "roll": -0.1125
+      },
+      "velocity": {
+        "x": -16.3245,
+        "y": 0.0121,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.1007,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 91,
+      "transform": {
+        "x": 9.1797,
+        "y": 130.5278,
+        "z": 0.0017,
+        "pitch": 0.0251,
+        "yaw": -179.51,
+        "roll": -0.1243
+      },
+      "velocity": {
+        "x": -16.4288,
+        "y": -0.1628,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0604,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 92,
+      "transform": {
+        "x": 8.3551,
+        "y": 130.5212,
+        "z": 0.0017,
+        "pitch": 0.0256,
+        "yaw": -178.4695,
+        "roll": -0.1268
+      },
+      "velocity": {
+        "x": -16.5307,
+        "y": -0.3214,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0362,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 93,
+      "transform": {
+        "x": 7.5254,
+        "y": 130.5053,
+        "z": 0.0017,
+        "pitch": 0.026,
+        "yaw": -177.6939,
+        "roll": -0.1263
+      },
+      "velocity": {
+        "x": -16.6296,
+        "y": -0.4736,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0217,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 94,
+      "transform": {
+        "x": 6.6909,
+        "y": 130.4807,
+        "z": 0.0017,
+        "pitch": 0.0262,
+        "yaw": -177.1408,
+        "roll": -0.1238
+      },
+      "velocity": {
+        "x": -16.7264,
+        "y": -0.6157,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.013,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 95,
+      "transform": {
+        "x": 5.8515,
+        "y": 130.4484,
+        "z": 0.0017,
+        "pitch": 0.0264,
+        "yaw": -176.7585,
+        "roll": -0.1191
+      },
+      "velocity": {
+        "x": -16.8221,
+        "y": -0.7422,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0078,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 96,
+      "transform": {
+        "x": 5.0075,
+        "y": 130.4096,
+        "z": 0.0017,
+        "pitch": 0.0264,
+        "yaw": -176.5004,
+        "roll": -0.1119
+      },
+      "velocity": {
+        "x": -16.9173,
+        "y": -0.8501,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0047,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 97,
+      "transform": {
+        "x": 4.1587,
+        "y": 130.3654,
+        "z": 0.0017,
+        "pitch": 0.0263,
+        "yaw": -176.3293,
+        "roll": -0.1028
+      },
+      "velocity": {
+        "x": -17.0123,
+        "y": -0.939,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0028,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 98,
+      "transform": {
+        "x": 3.3052,
+        "y": 130.317,
+        "z": 0.0017,
+        "pitch": 0.0262,
+        "yaw": -176.2174,
+        "roll": -0.0923
+      },
+      "velocity": {
+        "x": -17.1074,
+        "y": -1.0102,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0017,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 99,
+      "transform": {
+        "x": 2.4469,
+        "y": 130.2653,
+        "z": 0.0017,
+        "pitch": 0.0261,
+        "yaw": -176.145,
+        "roll": -0.0811
+      },
+      "velocity": {
+        "x": -17.2023,
+        "y": -1.0663,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 100,
+      "transform": {
+        "x": 1.584,
+        "y": 130.211,
+        "z": 0.0017,
+        "pitch": 0.0259,
+        "yaw": -176.0985,
+        "roll": -0.0701
+      },
+      "velocity": {
+        "x": -17.297,
+        "y": -1.11,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0006,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 101,
+      "transform": {
+        "x": 0.7163,
+        "y": 130.1547,
+        "z": 0.0017,
+        "pitch": 0.0257,
+        "yaw": -176.0687,
+        "roll": -0.0596
+      },
+      "velocity": {
+        "x": -17.3915,
+        "y": -1.1438,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0004,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 102,
+      "transform": {
+        "x": -0.1561,
+        "y": 130.0968,
+        "z": 0.0017,
+        "pitch": 0.0255,
+        "yaw": -176.0498,
+        "roll": -0.05
+      },
+      "velocity": {
+        "x": -17.4856,
+        "y": -1.1702,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0002,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 103,
+      "transform": {
+        "x": -1.0332,
+        "y": 130.0378,
+        "z": 0.0017,
+        "pitch": 0.0253,
+        "yaw": -176.0379,
+        "roll": -0.0414
+      },
+      "velocity": {
+        "x": -17.5791,
+        "y": -1.191,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 104,
+      "transform": {
+        "x": -1.915,
+        "y": 129.9779,
+        "z": 0.0017,
+        "pitch": 0.0251,
+        "yaw": -176.0303,
+        "roll": -0.0339
+      },
+      "velocity": {
+        "x": -17.6722,
+        "y": -1.2076,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 105,
+      "transform": {
+        "x": -2.8014,
+        "y": 129.9171,
+        "z": 0.0017,
+        "pitch": 0.025,
+        "yaw": -176.0255,
+        "roll": -0.0276
+      },
+      "velocity": {
+        "x": -17.7646,
+        "y": -1.2211,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 106,
+      "transform": {
+        "x": -3.6924,
+        "y": 129.8558,
+        "z": 0.0017,
+        "pitch": 0.0247,
+        "yaw": -176.0226,
+        "roll": -0.0223
+      },
+      "velocity": {
+        "x": -17.8564,
+        "y": -1.2325,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 107,
+      "transform": {
+        "x": -4.5879,
+        "y": 129.7939,
+        "z": 0.0017,
+        "pitch": 0.0245,
+        "yaw": -176.0207,
+        "roll": -0.0179
+      },
+      "velocity": {
+        "x": -17.9475,
+        "y": -1.2423,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": 0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 108,
+      "transform": {
+        "x": -5.4875,
+        "y": 129.7394,
+        "z": 0.0017,
+        "pitch": 0.0232,
+        "yaw": -176.4267,
+        "roll": 0.0315
+      },
+      "velocity": {
+        "x": -18.0193,
+        "y": -0.8771,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.28,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 109,
+      "transform": {
+        "x": -6.3899,
+        "y": 129.7022,
+        "z": 0.0017,
+        "pitch": 0.0209,
+        "yaw": -177.6137,
+        "roll": 0.1032
+      },
+      "velocity": {
+        "x": -18.0776,
+        "y": -0.4394,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.168,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 110,
+      "transform": {
+        "x": -7.2961,
+        "y": 129.6799,
+        "z": 0.0017,
+        "pitch": 0.0205,
+        "yaw": -179.106,
+        "roll": 0.1403
+      },
+      "velocity": {
+        "x": -18.1621,
+        "y": -0.1594,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.1008,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 111,
+      "transform": {
+        "x": -8.2068,
+        "y": 129.67,
+        "z": 0.0017,
+        "pitch": 0.021,
+        "yaw": 179.5008,
+        "roll": 0.1529
+      },
+      "velocity": {
+        "x": -18.2502,
+        "y": 0.0576,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0605,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 112,
+      "transform": {
+        "x": -9.122,
+        "y": 129.672,
+        "z": 0.0017,
+        "pitch": 0.0216,
+        "yaw": 178.3545,
+        "roll": 0.157
+      },
+      "velocity": {
+        "x": -18.3354,
+        "y": 0.2614,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0363,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 113,
+      "transform": {
+        "x": -10.0414,
+        "y": 129.6858,
+        "z": 0.0017,
+        "pitch": 0.022,
+        "yaw": 177.4741,
+        "roll": 0.1583
+      },
+      "velocity": {
+        "x": -18.4172,
+        "y": 0.461,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0218,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 114,
+      "transform": {
+        "x": -10.9649,
+        "y": 129.7107,
+        "z": 0.0017,
+        "pitch": 0.0224,
+        "yaw": 176.8272,
+        "roll": 0.1574
+      },
+      "velocity": {
+        "x": -18.4965,
+        "y": 0.651,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0131,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 115,
+      "transform": {
+        "x": -11.8922,
+        "y": 129.7458,
+        "z": 0.0017,
+        "pitch": 0.0226,
+        "yaw": 176.3668,
+        "roll": 0.1537
+      },
+      "velocity": {
+        "x": -18.5744,
+        "y": 0.8241,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0078,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 116,
+      "transform": {
+        "x": -12.8234,
+        "y": 129.7896,
+        "z": 0.0017,
+        "pitch": 0.0227,
+        "yaw": 176.0472,
+        "roll": 0.1469
+      },
+      "velocity": {
+        "x": -18.652,
+        "y": 0.9753,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0047,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 117,
+      "transform": {
+        "x": -13.7584,
+        "y": 129.841,
+        "z": 0.0017,
+        "pitch": 0.0227,
+        "yaw": 175.8297,
+        "roll": 0.1371
+      },
+      "velocity": {
+        "x": -18.7298,
+        "y": 1.1026,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0028,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 118,
+      "transform": {
+        "x": -14.6973,
+        "y": 129.8983,
+        "z": 0.0017,
+        "pitch": 0.0226,
+        "yaw": 175.6841,
+        "roll": 0.1252
+      },
+      "velocity": {
+        "x": -18.808,
+        "y": 1.2069,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0017,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 119,
+      "transform": {
+        "x": -15.6401,
+        "y": 129.9606,
+        "z": 0.0017,
+        "pitch": 0.0225,
+        "yaw": 175.5878,
+        "roll": 0.112
+      },
+      "velocity": {
+        "x": -18.8867,
+        "y": 1.2905,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 120,
+      "transform": {
+        "x": -16.5869,
+        "y": 130.0267,
+        "z": 0.0017,
+        "pitch": 0.0224,
+        "yaw": 175.5248,
+        "roll": 0.0983
+      },
+      "velocity": {
+        "x": -18.9659,
+        "y": 1.3564,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0006,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 121,
+      "transform": {
+        "x": -17.5376,
+        "y": 130.0958,
+        "z": 0.0017,
+        "pitch": 0.0223,
+        "yaw": 175.4837,
+        "roll": 0.0848
+      },
+      "velocity": {
+        "x": -19.0452,
+        "y": 1.4079,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0004,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 122,
+      "transform": {
+        "x": -18.4922,
+        "y": 130.1672,
+        "z": 0.0017,
+        "pitch": 0.0221,
+        "yaw": 175.4572,
+        "roll": 0.0721
+      },
+      "velocity": {
+        "x": -19.1246,
+        "y": 1.4479,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0002,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 123,
+      "transform": {
+        "x": -19.4508,
+        "y": 130.2403,
+        "z": 0.0017,
+        "pitch": 0.022,
+        "yaw": 175.4402,
+        "roll": 0.0606
+      },
+      "velocity": {
+        "x": -19.2039,
+        "y": 1.479,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 124,
+      "transform": {
+        "x": -20.4134,
+        "y": 130.3149,
+        "z": 0.0017,
+        "pitch": 0.0218,
+        "yaw": 175.4292,
+        "roll": 0.0503
+      },
+      "velocity": {
+        "x": -19.2829,
+        "y": 1.5035,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0001,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 125,
+      "transform": {
+        "x": -21.3799,
+        "y": 130.3906,
+        "z": 0.0017,
+        "pitch": 0.0216,
+        "yaw": 175.4221,
+        "roll": 0.0414
+      },
+      "velocity": {
+        "x": -19.3616,
+        "y": 1.5229,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 126,
+      "transform": {
+        "x": -22.3504,
+        "y": 130.4671,
+        "z": 0.0017,
+        "pitch": 0.0214,
+        "yaw": 175.4177,
+        "roll": 0.0337
+      },
+      "velocity": {
+        "x": -19.4399,
+        "y": 1.5385,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 127,
+      "transform": {
+        "x": -23.3247,
+        "y": 130.5444,
+        "z": 0.0017,
+        "pitch": 0.0213,
+        "yaw": 175.4148,
+        "roll": 0.0273
+      },
+      "velocity": {
+        "x": -19.5177,
+        "y": 1.5515,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 128,
+      "transform": {
+        "x": -24.3029,
+        "y": 130.6222,
+        "z": 0.0017,
+        "pitch": 0.0211,
+        "yaw": 175.413,
+        "roll": 0.022
+      },
+      "velocity": {
+        "x": -19.595,
+        "y": 1.5624,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.7,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 129,
+      "transform": {
+        "x": -25.2846,
+        "y": 130.7006,
+        "z": 0.0017,
+        "pitch": 0.0204,
+        "yaw": 175.4118,
+        "roll": 0.0176
+      },
+      "velocity": {
+        "x": -19.6516,
+        "y": 1.5703,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 130,
+      "transform": {
+        "x": -26.2663,
+        "y": 130.7791,
+        "z": 0.0018,
+        "pitch": 0.016,
+        "yaw": 175.4111,
+        "roll": 0.014
+      },
+      "velocity": {
+        "x": -19.6041,
+        "y": 1.5689,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 131,
+      "transform": {
+        "x": -27.2421,
+        "y": 130.8572,
+        "z": 0.0018,
+        "pitch": 0.0063,
+        "yaw": 175.4106,
+        "roll": 0.0111
+      },
+      "velocity": {
+        "x": -19.4505,
+        "y": 1.5581,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 132,
+      "transform": {
+        "x": -28.2081,
+        "y": 130.9346,
+        "z": 0.0019,
+        "pitch": -0.0063,
+        "yaw": 175.4103,
+        "roll": 0.0087
+      },
+      "velocity": {
+        "x": -19.2278,
+        "y": 1.5414,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 133,
+      "transform": {
+        "x": -29.1615,
+        "y": 131.011,
+        "z": 0.002,
+        "pitch": -0.0194,
+        "yaw": 175.4101,
+        "roll": 0.0068
+      },
+      "velocity": {
+        "x": -18.9603,
+        "y": 1.5207,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 134,
+      "transform": {
+        "x": -30.1006,
+        "y": 131.0863,
+        "z": 0.002,
+        "pitch": -0.0319,
+        "yaw": 175.4099,
+        "roll": 0.0053
+      },
+      "velocity": {
+        "x": -18.6641,
+        "y": 1.4974,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 135,
+      "transform": {
+        "x": -31.0244,
+        "y": 131.1605,
+        "z": 0.0021,
+        "pitch": -0.0428,
+        "yaw": 175.4098,
+        "roll": 0.0042
+      },
+      "velocity": {
+        "x": -18.35,
+        "y": 1.4726,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 136,
+      "transform": {
+        "x": -31.9321,
+        "y": 131.2333,
+        "z": 0.0021,
+        "pitch": -0.0519,
+        "yaw": 175.4098,
+        "roll": 0.0032
+      },
+      "velocity": {
+        "x": -18.0253,
+        "y": 1.4468,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 137,
+      "transform": {
+        "x": -32.8234,
+        "y": 131.3048,
+        "z": 0.0022,
+        "pitch": -0.0594,
+        "yaw": 175.4098,
+        "roll": 0.0025
+      },
+      "velocity": {
+        "x": -17.6952,
+        "y": 1.4204,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 138,
+      "transform": {
+        "x": -33.6982,
+        "y": 131.3751,
+        "z": 0.0022,
+        "pitch": -0.0652,
+        "yaw": 175.4098,
+        "roll": 0.0019
+      },
+      "velocity": {
+        "x": -17.3632,
+        "y": 1.3939,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 139,
+      "transform": {
+        "x": -34.5564,
+        "y": 131.4439,
+        "z": 0.0023,
+        "pitch": -0.0696,
+        "yaw": 175.4098,
+        "roll": 0.0015
+      },
+      "velocity": {
+        "x": -17.0317,
+        "y": 1.3673,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 140,
+      "transform": {
+        "x": -35.3981,
+        "y": 131.5115,
+        "z": 0.0023,
+        "pitch": -0.0728,
+        "yaw": 175.4098,
+        "roll": 0.0011
+      },
+      "velocity": {
+        "x": -16.7025,
+        "y": 1.3409,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 141,
+      "transform": {
+        "x": -36.2234,
+        "y": 131.5778,
+        "z": 0.0023,
+        "pitch": -0.0751,
+        "yaw": 175.4099,
+        "roll": 0.0009
+      },
+      "velocity": {
+        "x": -16.3767,
+        "y": 1.3148,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 142,
+      "transform": {
+        "x": -37.0325,
+        "y": 131.6427,
+        "z": 0.0023,
+        "pitch": -0.0765,
+        "yaw": 175.4099,
+        "roll": 0.0006
+      },
+      "velocity": {
+        "x": -16.055,
+        "y": 1.289,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 143,
+      "transform": {
+        "x": -37.8258,
+        "y": 131.7064,
+        "z": 0.0023,
+        "pitch": -0.0774,
+        "yaw": 175.41,
+        "roll": 0.0005
+      },
+      "velocity": {
+        "x": -15.738,
+        "y": 1.2635,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 144,
+      "transform": {
+        "x": -38.6033,
+        "y": 131.7688,
+        "z": 0.0023,
+        "pitch": -0.0777,
+        "yaw": 175.41,
+        "roll": 0.0004
+      },
+      "velocity": {
+        "x": -15.426,
+        "y": 1.2385,
+        "z": 0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    },
+    {
+      "frame": 145,
+      "transform": {
+        "x": -39.3653,
+        "y": 131.83,
+        "z": 0.0023,
+        "pitch": -0.0777,
+        "yaw": 175.41,
+        "roll": 0.0004
+      },
+      "velocity": {
+        "x": -15.1192,
+        "y": 1.2138,
+        "z": -0.0
+      },
+      "control": {
+        "throttle": 0.0,
+        "brake": 0.0,
+        "steer": -0.0,
+        "handbrake": false,
+        "reverse": false
+      }
+    }
+  ]
+}

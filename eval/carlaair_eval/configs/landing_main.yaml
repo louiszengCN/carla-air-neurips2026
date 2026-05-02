@@ -1,0 +1,12 @@
+# Landing main grid — reproduces paper Table 2 conditions.
+# Paper-strict: do not edit values in this file unless you intend to deviate.
+task: landing
+modes:
+  - C0
+  - C1                # default semantic
+  - C2                # bidirectional
+  - C2-Oracle         # oracle phase replaces VLA-decoded phase
+  - C2-NoisyOracle    # 30% label corruption on oracle phase
+seeds: [0, 1, 2]
+episodes_per_seed: 50
+control_hz: 10.0
