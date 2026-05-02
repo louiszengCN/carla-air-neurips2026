@@ -55,20 +55,22 @@ interface and condition grids.
 ```
 .
 ├── platform/
-│   ├── CarlaAir.sh                  Unified launcher (CARLA + AirSim ports)
-│   ├── auto_traffic.py              Background traffic + pedestrian spawner
-│   ├── AirSimConfig/settings.json   AirSim plugin configuration
-│   ├── env_setup/                   conda-based environment bootstrap
-│   ├── examples/                    Demo scripts (sync sensors, drone control,
-│   │                                map switching, recording, AGC convoy, ...)
+│   ├── BUILD.md                     From-source build guide
+│   │                                (CARLA 0.9.16 + AirSim 1.7.0 + UE4.26).
+│   ├── CarlaAir.sh                  Unified launcher (CARLA + AirSim ports).
+│   ├── auto_traffic.py              Background traffic + pedestrian spawner.
+│   ├── AirSimConfig/settings.json   AirSim plugin configuration.
+│   ├── env_setup/                   conda-based environment bootstrap.
 │   └── source_modifications/        The 3 upstream files modified to compose
-│                                    AirSim into CARLA's GameMode (paper App. B)
+│                                    AirSim into CARLA's GameMode (paper App. B).
 └── eval/
     ├── carlaair_eval/               Eval package (api, scenarios, runtime,
-    │                                metrics, reference, configs)
-    ├── scripts/                     Smoke tests
-    ├── tests/                       Unit tests (paper-conformance)
-    └── README.md                    Eval-package documentation
+    │                                metrics, reference, configs).
+    │   └── scenarios/data/          Self-contained UGV trajectory used by
+    │                                the escort scenario.
+    ├── scripts/                     Smoke tests.
+    ├── tests/                       Unit tests (paper-conformance).
+    └── README.md                    Eval-package documentation.
 ```
 
 ## What lives where
@@ -76,7 +78,7 @@ interface and condition grids.
 | Paper section | Code |
 |---|---|
 | §3 Single-process runtime           | `platform/CarlaAir.sh`, `platform/source_modifications/` |
-| §3 Native CARLA + AirSim Python API | `platform/examples/air_ground_sync.py`, `platform/examples/quick_start_showcase.py` |
+| §3 From-source build                | `platform/BUILD.md` |
 | App. B Source modification summary  | `platform/source_modifications/README.md` |
 | §4.1 Landing scenario               | `eval/carlaair_eval/scenarios/landing.py` |
 | §4.1 Escort scenario                | `eval/carlaair_eval/scenarios/escort.py` |

@@ -40,18 +40,16 @@ from ._carla_helpers import (
 from ..utils.coords import calibrate_offset, carla_to_ned
 
 
-# Resolve the default trajectory file relative to the repository so the
-# package is self-contained. Override with env var
-# `CARLAAIR_PLATFORM_TRAJECTORIES` if you keep your platform tree elsewhere.
+# The trajectory file ships inside the eval package so the suite is fully
+# self-contained. Override with env var `CARLAAIR_TRAJECTORY_DIR` if you
+# keep recorded UGV trajectories elsewhere.
 _TRAJ_NAME = "vehicle_20260501_191526.json"
-_HERE = Path(__file__).resolve()
-# Eval at <repo>/eval/carlaair_eval/scenarios/escort.py → repo root is parents[3].
-_REPO_DEFAULT = _HERE.parents[3] / "platform" / "examples" / "trajectories" / _TRAJ_NAME
-_ENV_DIR = os.environ.get("CARLAAIR_PLATFORM_TRAJECTORIES")
+_PKG_DEFAULT = Path(__file__).resolve().parent / "data" / _TRAJ_NAME
+_ENV_DIR = os.environ.get("CARLAAIR_TRAJECTORY_DIR")
 if _ENV_DIR and (Path(_ENV_DIR) / _TRAJ_NAME).exists():
     DEFAULT_TRAJECTORY_JSON = Path(_ENV_DIR) / _TRAJ_NAME
 else:
-    DEFAULT_TRAJECTORY_JSON = _REPO_DEFAULT
+    DEFAULT_TRAJECTORY_JSON = _PKG_DEFAULT
 ESCORT_VEHICLE_BP = "vehicle.tesla.model3"   # matches recorded trajectory file
 ESCORT_UAV_ALT_M  = 8.0                      # initial AGL above UGV roof
 

@@ -19,3 +19,6 @@ test = ["pytest>=7"]
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["carlaair_eval*"]
+
+[tool.setuptools.package-data]
+"carlaair_eval.scenarios" = ["data/*.json"]
