@@ -1,5 +1,9 @@
 # Anonymous Code Supplement
 
+<p align="center">
+  <img src="docs/images/teaser_video.gif" alt="CarlaAir teaser" width="100%"/>
+</p>
+
 This repository contains the code accompanying our NeurIPS 2026 submission on
 closed-loop air-ground cooperative VLA evaluation. It has two parts:
 
@@ -100,6 +104,37 @@ A separate pair of smoke tests exercises the live simulator:
 python eval/scripts/smoke_test.py        # landing scenario, ~3 s
 python eval/scripts/smoke_test_escort.py # escort scenario, ~3 s
 ```
+
+## Visual reference
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="docs/images/teaser_final.jpg" alt="Single-process runtime architecture" width="100%"/><br/>
+      <sub>Single-process CARLA + AirSim runtime architecture (paper §3).</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="docs/gifs/W1.gif" alt="Air-ground cooperation in a shared world" width="100%"/><br/>
+      <sub>Air-ground cooperation: drone and vehicle in the same world.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="docs/images/landing.jpg" alt="Cooperative moving-platform landing" width="100%"/><br/>
+      <sub>Cooperative moving-platform landing (paper §4.1, Figure 1).</sub>
+    </td>
+    <td align="center">
+      <img src="docs/images/datasets.jpg" alt="Synchronised aerial-ground sensing" width="100%"/><br/>
+      <sub>Synchronised aerial-ground sensing on a shared physics tick (App. B).</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2">
+      <img src="docs/images/coordinate.jpg" alt="Coordinate frame alignment" width="60%"/><br/>
+      <sub>Coordinate-frame alignment between CARLA (Unreal, Z-up) and AirSim (NED, Z-down). App. B.</sub>
+    </td>
+  </tr>
+</table>
 
 ## License
 
