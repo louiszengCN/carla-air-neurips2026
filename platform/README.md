@@ -26,23 +26,14 @@ platform/
                             App. B of the paper. See README inside.
 ```
 
-## Two ways to use this
+## Build and run
 
-**(a) Build from source.** Follow [`BUILD.md`](BUILD.md) to build a
-`CarlaUE4-Linux-Shipping` binary on top of CARLA 0.9.16 + AirSim 1.7.0
-+ Unreal Engine 4.26 with the three modified files in
-`source_modifications/` applied. Once built, place the binary tree
-under `platform/CarlaUE4/` and run `./CarlaAir.sh`.
-
-**(b) Use a pre-built CarlaAir distribution.** If you already have a
-CarlaAir release tree, copy `CarlaAir.sh`, `auto_traffic.py`,
-`AirSimConfig/`, and `env_setup/` from this repo into the release root
-(or simply launch the release's own `CarlaAir.sh`). The eval suite in
-[`../eval/`](../eval/) talks to the simulator over the standard
-`carla` / `airsim` Python clients and does not care which build path
-you took.
-
-## Run
+Follow [`BUILD.md`](BUILD.md) to build a `CarlaUE4-Linux-Shipping`
+binary on top of CARLA 0.9.16 + AirSim 1.7.0 + Unreal Engine 4.26 with
+the three modified files in `source_modifications/` applied. Once
+built, place the binary tree under `platform/CarlaUE4/` so that
+`platform/CarlaUE4/Binaries/Linux/CarlaUE4-Linux-Shipping` exists,
+then:
 
 ```bash
 bash env_setup/setup_env.sh   # one-time, creates conda env "carlaAir"
@@ -50,10 +41,11 @@ conda activate carlaAir
 ./CarlaAir.sh Town10HD        # default Epic quality, 1280x720, both ports
 ```
 
-Once the launcher prints `CarlaAir is ready!`, both ports are listening
-and any `carla` / `airsim` Python client (or the eval suite in
-`../eval/`) can connect. The launcher auto-spawns 10 vehicles + 10
-pedestrians for traffic flow; pass `--kill` to shut down.
+Once the launcher prints `CarlaAir is ready!`, both ports are
+listening and any `carla` / `airsim` Python client (or the eval suite
+in [`../eval/`](../eval/)) can connect. The launcher auto-spawns 10
+vehicles + 10 pedestrians for traffic flow; pass `--kill` to shut
+down.
 
 ## Drone controls (in-window)
 

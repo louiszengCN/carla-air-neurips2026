@@ -5,12 +5,6 @@ described in paper §3 / Appendix B from source. The result is a single
 `CarlaUE4-Linux-Shipping` binary that opens both the CARLA RPC port
 (2000) and the AirSim RPC port (41451) on one process.
 
-> **Note.** The from-source build is intended for users who need to
-> customise the engine layer. Most reviewers can skip this guide and
-> use a pre-built distribution: drop `CarlaAir.sh`, `auto_traffic.py`,
-> `AirSimConfig/`, and `env_setup/` from this directory into a CarlaAir
-> release tree and launch.
-
 The build is the standard CARLA + UE4 build flow with AirSim added as
 a UE4 plugin and three files replaced with the versions in
 `source_modifications/`.
