@@ -110,6 +110,32 @@ the paper:
 Discrete actions map to 0.5 s velocity bursts at 1.5 m/s, matching the
 AerialVLN adaptation in the paper.
 
+## Third-party baselines
+
+We do not redistribute third-party baseline implementations or model
+weights. Each baseline should be obtained from its official release.
+
+This repository provides:
+
+- the CarlaAir evaluation runtime;
+- diagnostic task configurations;
+- prompt templates;
+- metric computation scripts;
+- baseline adapter interfaces (input/output mapping for each policy regime).
+
+The evaluated baselines are:
+
+- AerialVLA
+- OpenFly
+- OpenUAV
+- SPF
+- AerialVLN
+
+All baselines are used with their official checkpoints and default
+inference settings. To reproduce the paper's numbers, plug each
+baseline into the `UAVPolicy` interface described above and run the
+condition grid in `carlaair_eval/configs/`.
+
 ## Cooperation modes
 
 | Mode                 | What it does                                                          |
