@@ -108,6 +108,10 @@ SPF, AerialVLN) and the Rule-Coop-State reference.
 > camera, which is rigidly attached to the UAV body. Any visible camera
 > shake is the UAV's own motion (the AirSim multirotor reacts to every
 > commanded velocity change), not a recording artefact.
+>
+> **Playback note.** Both clips are played back at 4× speed for compact
+> file size. Click on an image to open the full-resolution version,
+> where the per-cell UAV motion is much easier to see.
 
 ## License
 
