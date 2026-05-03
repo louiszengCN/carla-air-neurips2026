@@ -1,11 +1,14 @@
 # Anonymous Code Supplement
 
+### *for NeurIPS 2026 submission — "Can Aerial VLA Models Cooperate? Evaluating Closed-Loop Air-Ground Coordination with CARLA-Air"*
+
 <p align="center">
   <img src="docs/images/teaser_video.gif" alt="CarlaAir teaser" width="100%"/>
 </p>
 
-This repository contains the code accompanying our NeurIPS 2026 submission on
-closed-loop air-ground cooperative VLA evaluation. It has two parts:
+Hi, and thanks for stopping by 👋 — this repository hosts the code
+supplement for our NeurIPS 2026 submission on closed-loop air-ground
+cooperative VLA evaluation. It has two parts:
 
 - **`platform/`** — the CarlaAir runtime: the single-process integration of
   CARLA and AirSim described in §3 / Appendix B of the paper. Contains the
