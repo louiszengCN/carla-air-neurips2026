@@ -89,20 +89,20 @@ reference is not run under that cooperation mode.
   <img src="docs/gifs/landing_grid.gif" alt="Landing-task baseline grid" width="100%"/>
 </p>
 
-<p align="center"><sub>
+<p align="center"><em>
 <b>Cooperative Moving-Platform Landing.</b> Rows: cooperation mode
 (C0 / C1 / C2). Columns: aerial baseline (AerialVLA, OpenFly, OpenUAV,
 SPF, AerialVLN) and the Rule-Coop-State reference.
-</sub></p>
+</em></p>
 
 <p align="center">
   <img src="docs/gifs/escort_grid.gif" alt="Escort-task baseline grid" width="100%"/>
 </p>
 
-<p align="center"><sub>
+<p align="center"><em>
 <b>Cooperative Occlusion-Recovery Escort.</b> Rows: cooperation mode
 (C0 / C1). Columns: same baselines plus the Rule-Coop-State reference.
-</sub></p>
+</em></p>
 
 > **Camera note.** All clips use the AirSim default 3rd-person chase
 > camera, which is rigidly attached to the UAV body. Any visible camera
