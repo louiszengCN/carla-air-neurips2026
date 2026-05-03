@@ -92,9 +92,7 @@ reference is not run under that cooperation mode.
 <p align="center"><sub>
 <b>Cooperative Moving-Platform Landing.</b> Rows: cooperation mode
 (C0 / C1 / C2). Columns: aerial baseline (AerialVLA, OpenFly, OpenUAV,
-SPF, AerialVLN) and the Rule-Coop-State reference. Each cell shows the
-UAV attempting to track and land on the rear cargo bed of an
-orange CarlaCola truck driving in a straight line at v0 = 4 m/s.
+SPF, AerialVLN) and the Rule-Coop-State reference.
 </sub></p>
 
 <p align="center">
@@ -104,9 +102,6 @@ orange CarlaCola truck driving in a straight line at v0 = 4 m/s.
 <p align="center"><sub>
 <b>Cooperative Occlusion-Recovery Escort.</b> Rows: cooperation mode
 (C0 / C1). Columns: same baselines plus the Rule-Coop-State reference.
-The UGV (Tesla Model 3) drives along a Town10HD route that crosses an
-elevated walkway; the UAV climbs over the bridge and re-establishes
-visual contact on the far side.
 </sub></p>
 
 > **Camera note.** All clips use the AirSim default 3rd-person chase
