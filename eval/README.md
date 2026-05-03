@@ -125,11 +125,11 @@ This repository provides:
 
 The evaluated baselines are:
 
-- AerialVLA
-- OpenFly
-- OpenUAV
-- SPF
-- AerialVLN
+- [AerialVLA](https://arxiv.org/abs/2603.14363)
+- [OpenFly](https://arxiv.org/abs/2502.18041)
+- [OpenUAV](https://arxiv.org/abs/2410.07087)
+- [SPF](https://arxiv.org/abs/2509.22653)
+- [AerialVLN](https://openaccess.thecvf.com/content/ICCV2023/papers/Liu_AerialVLN_Vision-and-Language_Navigation_for_UAVs_ICCV_2023_paper.pdf)
 
 All baselines are used with their official checkpoints and default
 inference settings. To reproduce the paper's numbers, plug each
