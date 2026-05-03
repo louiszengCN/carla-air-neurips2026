@@ -77,6 +77,43 @@ condition grids.
     └── README.md                    Eval-package documentation.
 ```
 
+## Visual examples
+
+Two grid montages, recorded directly inside CarlaAir, showing every
+baseline / cooperation-mode combination side by side. Each cell is a
+single rollout with the corresponding (baseline, mode) configuration;
+empty cells in the rightmost column indicate that the Rule-Coop-State
+reference is not run under that cooperation mode.
+
+<p align="center">
+  <img src="docs/gifs/landing_grid.gif" alt="Landing-task baseline grid" width="100%"/>
+</p>
+
+<p align="center"><sub>
+<b>Cooperative Moving-Platform Landing.</b> Rows: cooperation mode
+(C0 / C1 / C2). Columns: aerial baseline (AerialVLA, OpenFly, OpenUAV,
+SPF, AerialVLN) and the Rule-Coop-State reference. Each cell shows the
+UAV attempting to track and land on the rear cargo bed of an
+orange CarlaCola truck driving in a straight line at v0 = 4 m/s.
+</sub></p>
+
+<p align="center">
+  <img src="docs/gifs/escort_grid.gif" alt="Escort-task baseline grid" width="100%"/>
+</p>
+
+<p align="center"><sub>
+<b>Cooperative Occlusion-Recovery Escort.</b> Rows: cooperation mode
+(C0 / C1). Columns: same baselines plus the Rule-Coop-State reference.
+The UGV (Tesla Model 3) drives along a Town10HD route that crosses an
+elevated walkway; the UAV climbs over the bridge and re-establishes
+visual contact on the far side.
+</sub></p>
+
+> **Camera note.** All clips use the AirSim default 3rd-person chase
+> camera, which is rigidly attached to the UAV body. Any visible camera
+> shake is the UAV's own motion (the AirSim multirotor reacts to every
+> commanded velocity change), not a recording artefact.
+
 ## License
 
 Released under the MIT License (see `LICENSE`).

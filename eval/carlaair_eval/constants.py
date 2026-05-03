@@ -3,8 +3,8 @@
 Reference: CarlaAir NeurIPS 2026 submission (round6).
 
 Cross-references:
-- Landing time limit / cargo-bed success: §4.1, App. C.1
-- C2 controller v0/α/β:                     Eq. (1), App. C.2
+- Landing time limit / cargo-bed success:    §4.1, App. C.1
+- C2 controller v0 / v_ref / clip range:     Eq. (1), App. C.2
 - TSR window K:                              App. C.4 ("Tracking Success Rate")
 - CCR floor ε:                               App. C.4 ("Cooperative Conversion Rate")
 - Touch-down stability (≤0.3 m within 2 s): App. C.4 ("Landing Success Rate")
@@ -36,10 +36,17 @@ TSR_VISIBLE_SECONDS_K      = 3.0   # cumulative target-in-view time
 # ── CCR ───────────────────────────────────────────────────────────────────
 CCR_EPSILON                = 0.05
 
-# ── C2 cooperative controller (Eq. 1) ─────────────────────────────────────
+# ── C2 cooperative controller (paper Eq. 1, App. C.2) ────────────────────
+#
+#   v_UGV = v0 · clip( ‖v_UAV^fwd‖ / v_ref ,  clip_low,  clip_high )
+#
+# v0 is the nominal UGV speed. v_ref is a reference scaling constant for
+# the UAV's commanded forward-velocity magnitude. The clip operator bounds
+# the multiplicative factor to [0.5×, 1.5×] to prevent extreme values.
 C2_V0_MS                   = 4.0
-C2_ALPHA_APPROACH          = 0.25
-C2_BETA_DESCEND            = 0.40
+C2_V_REF_MS                = 2.0
+C2_CLIP_LOW                = 0.5
+C2_CLIP_HIGH               = 1.5
 
 # ── Statistical protocol ──────────────────────────────────────────────────
 DEFAULT_SEEDS              = 3

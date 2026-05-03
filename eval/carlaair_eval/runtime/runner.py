@@ -26,7 +26,6 @@ from ..api.policy import (
     TrajectoryCommand, DiscreteCommand, Observation,
 )
 from ..api.cue import LANDING_BASE_INSTRUCTION, ESCORT_BASE_INSTRUCTION
-from ..api.phase_decoder import LandingPhase
 from ..constants import (
     LANDING_EPISODE_SECONDS, ESCORT_EPISODE_SECONDS,
     LANDING_TOUCHDOWN_DRIFT_M, LANDING_TOUCHDOWN_HOLD_S,
@@ -141,9 +140,6 @@ def run_episode(
         scen = LandingScenario(seed=seed, **scen_kwargs).setup()
         episode_len = LANDING_EPISODE_SECONDS
         instruction = LANDING_BASE_INSTRUCTION
-        if mode.startswith("C2") and "oracle_phase_provider" not in coord_kwargs and (
-                mode == "C2-Oracle" or mode == "C2-NoisyOracle"):
-            coord_kwargs["oracle_phase_provider"] = lambda st: _oracle_landing_phase(st)
     elif task == "escort":
         scen = EscortScenario(seed=seed, **scen_kwargs).setup()
         episode_len = ESCORT_EPISODE_SECONDS
@@ -260,9 +256,10 @@ def run_episode(
                             tick_index += 1
                             break
 
-                # decoded phase (also written into trace)
-                if hasattr(coord, "_last_phase"):
-                    decoded_phase = getattr(coord, "_last_phase", None)
+                # Cue-side narrative phase (free-form string used by the
+                # C1 cue templates; "approach" by default).
+                if hasattr(coord, "_phase"):
+                    decoded_phase = getattr(coord, "_phase", None)
 
             else:  # escort
                 iou = _ugv_in_view_iou(state, scen.fov_forward,
@@ -444,39 +441,6 @@ def _record_tick(writer, tick_index, task, mode, seed, episode_id, state,
             action_latency_ms=act_latency_ms, cue_latency_ms=cue_latency_ms,
         )
     writer.write(rec)
-
-
-def _oracle_landing_phase(state) -> str:
-    """Oracle ground-truth phase (paper Eq. 2, App. C.7).
-
-    phi* = approach   if d > 8 m
-           descend    if 2 m < d <= 8 m  AND  cos(theta) >= 0.7
-           hover      otherwise
-
-    where:
-      d     = Euclidean distance from UAV to cargo-bed centre,
-      theta = angle between UAV velocity vector and the (NED) vertical.
-
-    The paper's oracle definition does not emit `touchdown`; the touchdown
-    transition is captured separately by the LSR metric (App. C.4).
-    """
-    dx = state.uav_world[0] - state.bed_world[0]
-    dy = state.uav_world[1] - state.bed_world[1]
-    dz = state.uav_world[2] - state.bed_world[2]
-    d = math.sqrt(dx * dx + dy * dy + dz * dz)
-
-    if d > 8.0:
-        return LandingPhase.APPROACH
-
-    vx, vy, vz = state.uav_velocity_ned
-    v_norm = math.sqrt(vx * vx + vy * vy + vz * vz)
-    # NED vertical (down) unit vector is (0, 0, +1); cos(theta) = vz / |v|.
-    cos_theta = (vz / v_norm) if v_norm > 1e-6 else 0.0
-
-    if 2.0 < d <= 8.0 and cos_theta >= 0.7:
-        return LandingPhase.DESCEND
-
-    return LandingPhase.HOVER
 
 
 def _paper_constants_snapshot() -> Dict[str, Any]:

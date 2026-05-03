@@ -15,7 +15,7 @@ metric aggregation.
 
 ```
 carlaair_eval/
-  api/           UAVPolicy ABC, action types, prompt builders, phase decoder
+  api/           UAVPolicy ABC, action types, prompt builders
   scenarios/     Landing and Escort scenarios (CARLA + AirSim glue)
   runtime/       Episode runner, C0/C1/C2 coordinators, JSONL trace writer
   metrics/       TSR / LSR / CCR / CG, RSR / RAT, DF / ECL, bootstrap + sign test
@@ -23,7 +23,7 @@ carlaair_eval/
   configs/       YAML files for the four condition grids
   scripts/       run_eval, compute_report, smoke tests
   examples/      Minimal dummy policy
-  tests/         Unit tests for prompts, oracle phase, and metrics
+  tests/         Unit tests for prompts and metric definitions
   constants.py   Paper constants (episode lengths, thresholds, C2 controller, etc.)
 ```
 
@@ -63,7 +63,7 @@ python scripts/smoke_test_escort.py # ~3 s escort scenario
 
 ## Unit tests
 
-A 27-test conformance suite under `tests/` runs in a few seconds with
+A 21-test conformance suite under `tests/` runs in a few seconds with
 no simulator required:
 
 ```bash
@@ -75,7 +75,6 @@ What it covers:
 | Group | Count | What it asserts |
 |---|---|---|
 | Prompt templates  | 10 | Cue strings produced by `api/cue.py` match the canonical examples in Table 6 / Table C.5 of the paper character-for-character. |
-| Oracle phase decoder | 6 | Every branch and boundary of Eq. (2) in the paper (`d > 8 → approach`, `2 < d ≤ 8 ∧ cos θ ≥ 0.7 → descend`, otherwise `hover`). |
 | Landing metrics   | 5 | Boundary cases of TSR (`K = 3 s`), LSR (drift `≤ 0.3 m` within `2 s`, no collision), and CCR / CG aggregation. |
 | Escort metrics    | 3 | RSR aggregation across multiple occlusion events; RAT cap at `15 s`. |
 | Statistics        | 3 | Hierarchical bootstrap CI degenerate cases; sign-test edge cases. |
@@ -120,13 +119,15 @@ AerialVLN adaptation in the paper.
 | `C1-Num`             | Same path, structured numeric cue                                      |
 | `C1-Noisy`           | Same path, semantic cue with 30 % per-field corruption                 |
 | `C1-Oracle-Bearing`  | Oracle bearing / range / elevation cue                                 |
-| `C2`                 | Bidirectional, landing only — UAV action drives UGV longitudinal speed |
-| `C2-Oracle`          | C2 with VLA-decoded phase replaced by the oracle phase from Eq. (2)    |
-| `C2-NoisyOracle`     | C2-Oracle with 30 % phase-label corruption                             |
+| `C2`                 | Bidirectional, landing only — UAV forward-velocity magnitude drives UGV longitudinal speed |
 
-The C2 UGV speed law follows Eq. (1) in the paper:
-`v_UGV = v0 (1 + α · 1[approach] − β · 1[descend])` with
-`v0 = 4.0 m/s`, `α = 0.25`, `β = 0.40`. These live in `constants.py`.
+The C2 controller follows Eq. (1) in the paper:
+`v_UGV = v0 · clip(‖v_UAV^fwd‖ / v_ref, 0.5, 1.5)` with
+`v0 = 4.0 m/s`, `v_ref = 2.0 m/s`. These live in `constants.py`. The
+forward-velocity magnitude is read from the baseline's native action
+output (continuous velocity → ‖(vx, vy)‖; waypoint → displacement /
+inference period; trajectory → first-segment velocity; discrete →
+realized UAV speed at the same tick).
 
 ## Metrics
 

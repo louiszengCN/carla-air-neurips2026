@@ -3,10 +3,8 @@
 task: landing
 modes:
   - C0
-  - C1                # default semantic
-  - C2                # bidirectional
-  - C2-Oracle         # oracle phase replaces VLA-decoded phase
-  - C2-NoisyOracle    # 30% label corruption on oracle phase
+  - C1                # default semantic cue
+  - C2                # bidirectional UAV-to-UGV action coupling (Eq. 1)
 seeds: [0, 1, 2]
 episodes_per_seed: 50
 control_hz: 10.0

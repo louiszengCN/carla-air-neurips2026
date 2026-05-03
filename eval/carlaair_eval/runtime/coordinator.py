@@ -3,10 +3,14 @@
 Paper §4.1 + Appendix C.2:
   C0  Independent execution. No communication.
   C1  UGV→UAV semantic prompting. UAV outputs only UAV actions.
-  C2  (landing only) Bidirectional. UAV action → phase decoder → UGV
-       longitudinal speed via Eq. (1):
-           v_UGV = v0 (1 + α · 1[approach]  − β · 1[descend])
-       v0 = 4.0 m/s, α = 0.25, β = 0.40.
+  C2  (landing only) Bidirectional UAV-to-UGV action coupling. The
+       magnitude of the UAV's commanded forward velocity is passed
+       directly to the UGV's longitudinal controller, with no
+       intermediate phase decoder or learned mapping (Eq. 1):
+
+           v_UGV = v0 · clip( ‖v_UAV^fwd‖ / v_ref ,  0.5,  1.5 )
+
+       v0 = 4.0 m/s, v_ref = 2.0 m/s.
 
 The coordinator is the single object that:
    1) builds the partner cue passed to the policy (per-tick),
@@ -17,23 +21,26 @@ from __future__ import annotations
 
 import math
 import random
-from dataclasses import dataclass
-from typing import Callable, Optional, Tuple
+from typing import Optional
 
 from ..api.cue import (
     LandingCueState, EscortCueState,
     build_landing_cue, build_escort_cue, CueFormat,
 )
-from ..api.phase_decoder import LandingPhase, default_phase_decoder, PhaseDecoder
-from ..api.policy import PartnerCue, UAVAction
-from ..constants import C2_V0_MS, C2_ALPHA_APPROACH, C2_BETA_DESCEND
+from ..api.policy import (
+    PartnerCue, UAVAction,
+    VelocityCommand, WaypointCommand, TrajectoryCommand, DiscreteCommand,
+)
+from ..constants import (
+    C2_V0_MS, C2_V_REF_MS, C2_CLIP_LOW, C2_CLIP_HIGH,
+)
 from ..utils.coords import bearing_range_elevation
 
 
 # ── C0 ───────────────────────────────────────────────────────────────────
 class C0Coordinator:
     name = "C0"
-    task = "landing"   # task is set after construction; default placeholder
+    task = "landing"
 
     def __init__(self, task: str):
         self.task = task
@@ -54,7 +61,12 @@ class C1Coordinator:
         self.task = task
         self.cue_format = cue_format
         self._noise_rng = random.Random(noise_seed)
-        self._phase = LandingPhase.APPROACH
+        # `_phase` is a free-form string used by the C1 cue templates to
+        # narrate the current landing stage ("approach" / "descend" /
+        # "hover" / "touchdown"). It is set externally by the runner if
+        # a downstream component decides on a phase label; otherwise it
+        # stays at "approach".
+        self._phase = "approach"
 
     def cue(self, scenario_state) -> Optional[PartnerCue]:
         if self.task == "landing":
@@ -67,7 +79,6 @@ class C1Coordinator:
         bearing, rng_m, elev = bearing_range_elevation(
             st.bed_world, st.uav_world, st.uav_yaw_rad
         )
-        # body-frame dx/dy for direction quantisation
         c, s = math.cos(-st.uav_yaw_rad), math.sin(-st.uav_yaw_rad)
         rx, ry = st.bed_world[0] - st.uav_world[0], st.bed_world[1] - st.uav_world[1]
         bx = rx * c - ry * s
@@ -86,7 +97,6 @@ class C1Coordinator:
 
     def _escort_cue(self, st) -> PartnerCue:
         ev = st.active_occlusion
-        # Geometry to UGV (used by C1-Num and C1-Oracle-Bearing).
         bearing, rng_m, elev = bearing_range_elevation(
             st.ugv_world, st.uav_world, st.uav_yaw_rad
         )
@@ -113,55 +123,72 @@ class C1Coordinator:
 
 # ── C2 (landing only) ────────────────────────────────────────────────────
 class C2Coordinator(C1Coordinator):
+    """Bidirectional UAV-to-UGV action coupling.
+
+    The UAV side runs identically to C1; in addition, every tick the
+    coordinator extracts the magnitude of the UAV's commanded forward
+    velocity and feeds it through the Eq. 1 controller to set the next
+    UGV longitudinal speed setpoint. There is no phase decoder, no
+    learned mapping, and no UAV-side reward shaping — the protocol is
+    intentionally a naive form of bidirectional action coupling.
+    """
     name = "C2"
 
     def __init__(self, task: str, cue_format: str = CueFormat.SEMANTIC,
-                 phase_decoder: Optional[PhaseDecoder] = None,
                  noise_seed: int = 0,
-                 oracle_phase_provider: Optional[Callable[[any], str]] = None,
-                 noisy_oracle_corruption: float = 0.0,
-                 noisy_oracle_seed: int = 0):
+                 inference_period_s: float = 1.0):
         if task != "landing":
             raise ValueError("C2 is defined only for the landing task (paper §4.1).")
         super().__init__(task=task, cue_format=cue_format, noise_seed=noise_seed)
-        self._decoder: PhaseDecoder = phase_decoder or default_phase_decoder
-        self._oracle_phase = oracle_phase_provider
-        self._oracle_noise_p = noisy_oracle_corruption
-        self._oracle_rng = random.Random(noisy_oracle_seed)
-        self._last_phase = LandingPhase.APPROACH
+        self._inference_period = inference_period_s
+
+    # ── Eq. 1: UGV speed from UAV forward-velocity magnitude ────────────
+    def _uav_forward_speed(self, action: Optional[UAVAction],
+                           scenario_state) -> float:
+        """Return the magnitude of the UAV's commanded forward velocity
+        (m/s) for the current tick, derived from the baseline's native
+        action interface (paper App. C.2).
+
+        Mapping:
+          * VelocityCommand:   sqrt(vx² + vy²)
+          * WaypointCommand:   ‖waypoint − current_position‖ / inference_period
+          * TrajectoryCommand: ‖p1 − p0‖ / dt
+          * DiscreteCommand:   realized UAV forward speed at the same tick
+                               (read from scenario_state.uav_velocity_ned)
+        """
+        if action is None:
+            return 0.0
+
+        if isinstance(action, VelocityCommand):
+            return math.sqrt(action.vx * action.vx + action.vy * action.vy)
+
+        if isinstance(action, WaypointCommand):
+            uav = scenario_state.uav_world
+            dx = action.x - uav[0]
+            dy = action.y - uav[1]
+            return math.sqrt(dx * dx + dy * dy) / max(self._inference_period, 1e-6)
+
+        if isinstance(action, TrajectoryCommand) and len(action.points) >= 2:
+            (x0, y0, _), (x1, y1, _) = action.points[0], action.points[1]
+            dt = max(action.dt, 1e-6)
+            dx = (x1 - x0) / dt
+            dy = (y1 - y0) / dt
+            return math.sqrt(dx * dx + dy * dy)
+
+        if isinstance(action, DiscreteCommand):
+            # For discrete-output baselines the paper specifies the
+            # realized UAV forward speed from the simulator at the same
+            # tick. We read it off the scenario state's UAV NED velocity.
+            v = getattr(scenario_state, "uav_velocity_ned", (0.0, 0.0, 0.0))
+            return math.sqrt(v[0] * v[0] + v[1] * v[1])
+
+        return 0.0
 
     def ugv_target_speed(self, scenario_state, last_uav_action) -> float:
-        st = scenario_state
-        # altitude above bed (positive = drone above bed)
-        alt = max(0.0, st.bed_world[2] - st.uav_world[2] + 0.0) * -1.0
-        alt = abs(st.uav_world[2] - st.bed_world[2])
-        uav_state = {
-            "x": st.uav_world[0], "y": st.uav_world[1], "z": st.uav_world[2],
-        }
-
-        if self._oracle_phase is not None:
-            phase = self._oracle_phase(scenario_state)
-            if self._oracle_noise_p > 0 and self._oracle_rng.random() < self._oracle_noise_p:
-                # Paper App. C.7: noisy oracle uniformly samples an
-                # incorrect phase from the oracle phase vocabulary
-                # {approach, descend, hover} (touchdown is not in Eq. 2).
-                vocab = [p for p in
-                         (LandingPhase.APPROACH, LandingPhase.DESCEND,
-                          LandingPhase.HOVER)
-                         if p != phase]
-                phase = self._oracle_rng.choice(vocab)
-        elif last_uav_action is not None:
-            phase = self._decoder(last_uav_action, uav_state, alt)
-        else:
-            phase = LandingPhase.APPROACH
-
-        self._last_phase = phase
-        self.update_landing_phase(phase)
-
-        v = C2_V0_MS * (1.0
-                        + C2_ALPHA_APPROACH * (1.0 if phase == LandingPhase.APPROACH else 0.0)
-                        - C2_BETA_DESCEND   * (1.0 if phase == LandingPhase.DESCEND  else 0.0))
-        return max(0.0, v)
+        v_fwd = self._uav_forward_speed(last_uav_action, scenario_state)
+        factor = v_fwd / max(C2_V_REF_MS, 1e-6)
+        factor = max(C2_CLIP_LOW, min(C2_CLIP_HIGH, factor))
+        return C2_V0_MS * factor
 
 
 # ── factory ──────────────────────────────────────────────────────────────
@@ -179,15 +206,5 @@ def build_coordinator(mode: str, task: str, **kwargs):
         }.get(mode, CueFormat.SEMANTIC)
         return C1Coordinator(task=task, cue_format=fmt, **kwargs)
     if mode == "C2":
-        return C2Coordinator(task=task, cue_format=CueFormat.SEMANTIC, **kwargs)
-    if mode == "C2-ORACLE":
-        # C2 with VLA-decoded phase replaced by oracle ground-truth phase.
-        if "oracle_phase_provider" not in kwargs:
-            raise ValueError("C2-Oracle requires an oracle_phase_provider")
-        return C2Coordinator(task=task, cue_format=CueFormat.SEMANTIC, **kwargs)
-    if mode == "C2-NOISYORACLE":
-        if "oracle_phase_provider" not in kwargs:
-            raise ValueError("C2-NoisyOracle requires an oracle_phase_provider")
-        kwargs.setdefault("noisy_oracle_corruption", 0.30)
         return C2Coordinator(task=task, cue_format=CueFormat.SEMANTIC, **kwargs)
     raise ValueError(f"unknown cooperation mode: {mode}")

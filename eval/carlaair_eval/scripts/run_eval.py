@@ -2,7 +2,7 @@
 """Single-command runner — execute one paper condition end to end.
 
 Usage:
-    # Run landing main grid (C0/C1/C2/C2-Oracle/C2-NoisyOracle), 3 seeds × 50 ep
+    # Run landing main grid (C0 / C1 / C2), 3 seeds × 50 episodes
     python -m carlaair_eval.scripts.run_eval \
         --config carlaair_eval/configs/landing_main.yaml \
         --policy carlaair_eval.examples.dummy_policy:DummyHoverPolicy \

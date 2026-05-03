@@ -22,7 +22,7 @@ class UAVAction:
 
 @dataclass
 class VelocityCommand(UAVAction):
-    """Continuous velocity command (NED, m/s) — AerialVLA / AutoFly regime.
+    """Continuous velocity command (NED, m/s) — AerialVLA regime.
 
     yaw_deg is absolute world yaw. Duration in seconds bounds the command.
     """
